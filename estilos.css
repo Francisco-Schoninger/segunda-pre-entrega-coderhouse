@@ -12,12 +12,12 @@ body{
 }
 
 *{
-  font-family: Verdana;
+  font-family: 'Ysabeau', sans-serif; 
   font-size: 20px;
 }
 
 body{
-  background-color: #7e7a7a;
+  background-color: #727171;
 }
 
 
@@ -49,6 +49,10 @@ body{
   transition: all 0.1s;
 }
 
+.navbar__list li a{
+  font-family: Verdana;
+}
+
 
 /* animación de la navbar     vvvvvvvvvvvvvv      */
 
@@ -72,6 +76,7 @@ body{
   display: grid;
   grid-template-rows: 12rem 12rem 12rem;
   grid-template-columns: 63% 27%;
+  /* background-color: #373737; */
 
   grid-template-areas: 
   "main other"
@@ -83,38 +88,78 @@ body{
 }
 
 .menu__gridContainer div{
-  outline:3px solid #373737;
+  outline:3px solid #564642;
 }
 
 .menu__gridContainer__main{
   grid-area: main;
   background-color: #888787;
   z-index: 1000;
+  background-image:url(https://placeholder.com/1920x1080);
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: grid;
 }
+
+/* ===titulo noticia principal=== */
 
 .menu__gridContainer__main__title{
   color: white;
-  font-weight: 100;
+  font-weight: 50;
   font-size: 40px;
   text-align: center;
   font-family: 'Castoro Titling', cursive;
+  align-self: flex-end;
+  margin: 2rem 5rem;
 }
 
 
 
-/* ==== noticias secundarias ==== */
+/* ================== noticias secundarias ================ */
 
 .menu__gridContainer__other{
   grid-area: other;
   display: grid;
-  grid-template-rows: 12rem 12rem 12rem;
+  grid-template-rows: 12rem 12rem 12rem 12rem 12rem;
   grid-template-columns: 100%;
-  align-content: center;
+  overflow: auto;
 }
 
-.menu__gridContainer__other div{
+.otherNew{
   margin: 1rem 0.8rem;
   background-color: #888787;
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+  "otherNewImage otherNewTitle"
+  "otherNewImage otherNewDate"
+
 }
+
+.otherNew img{
+  padding: 0.5rem;
+  grid-area: otherNewImage;
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+}
+
+.otherNew h3{
+  font-family: 'Ysabeau', sans-serif;
+  font-size: 23px;
+  text-align: left;
+  align-self: normal;
+  margin-top: 0.8rem;
+  grid-area: otherNewTitle;
+}
+
+.otherNew__date{
+  grid-area: otherNewDate;
+  font-size: 18px;
+  font-family: 'Ysabeau', sans-serif;
+  justify-self: end;
+  margin-right: 1rem;
+}
+
 
 
