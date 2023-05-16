@@ -160,7 +160,7 @@ body{
   border-left: 2px solid black;
   justify-self: center;
   width: 70%;
-  height: 60%;
+  height: 54%;
   object-fit: cover;
 }
 
@@ -326,4 +326,56 @@ h6{
 .contact-container__card:hover a{
   color: white;
   text-decoration: underline 2px solid white;
+}
+
+
+
+
+
+
+
+/* ===================================================================================================================
+===================================================================================================================
+=======================================TIENDA.HTML=====================================================================
+=====================================================================
+===================================================================================================================
+========================================================================================================================================== */
+
+
+
+
+
+.store-container{
+  display: grid;
+  grid-template-rows: 10vw 10vw 10vw;
+  grid-template-columns: 55vh 55vh;
+  justify-content: center;
+  margin: 4rem;
+}
+
+.store-container__card{
+  border: 2px solid #433f48;
+  background-color: #77737d;
+  margin: 0.5rem;
+  border-radius: 10px;
+  display: flex;
+}
+
+.store-container__card img{
+  margin: 0.3rem;
+}
+
+.store-container__card h2{
+  color: white;
+  align-self: center;
+  margin: 0.5rem;
+  font-size: 24px;
+}
+
+.store-container__card h3{
+  align-self: center;
+  margin: 0.2rem;
+  color: white;
+  font-size: 30px;
+  text-decoration: underline 3px solid white;
 }
