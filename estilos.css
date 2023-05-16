@@ -143,13 +143,15 @@ body{
 /* ===titulo e imagen noticia principal=== */
 
 .menu__gridContainer__main__title{
-  color: white;
+  color: #e1dddd;
   font-weight: 50;
   font-size: 40px;
   text-align: center;
-  font-family: 'Ysabeau', sans-serif; 
+  /* font-family: 'Ysabeau', sans-serif;  */
+  font-family: verdana;
   align-self: flex-end;
-  position: relative;
+  position: absolute;
+  margin-bottom: 7rem;
 }
 
 .menu__gridContainer__main__img{
@@ -158,8 +160,16 @@ body{
   border-left: 2px solid black;
   justify-self: center;
   width: 70%;
-  height: 80%;
+  height: 60%;
   object-fit: cover;
+}
+
+.menu__gridContainer__main__subtitle{
+  color: #e1dddd;
+  position: absolute;
+  justify-self: center;
+  align-self: flex-end;
+  margin-bottom: 4rem;
 }
 
 
@@ -248,4 +258,72 @@ body{
 
 h6{
   margin: 0 15% 0 15%;
+}
+
+
+
+
+
+
+
+
+
+/* ====================================================================================
+====================================================================================
+=============================CONTACTO.HTML============================================================
+====================================================================================
+================================================================================================ */
+
+
+
+
+
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container__card{
+  height: 30rem;
+  width: 21rem;
+  background-color: #222025;
+  margin: 3rem;
+  color:#e1dddd;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.contact-container__card img{
+  width: 300px;
+  margin: 1rem;
+
+}
+
+.contact-container__card h2{
+  margin: 2rem;
+  font-size: 40px;
+}
+
+.contact-container__card a{
+  color:#e1dddd;
+  transition: all 0.2s
+}
+
+
+
+
+
+
+.contact-container__card:hover{
+  transform: scale(1.06);
+  color: white;
+}
+
+.contact-container__card:hover a{
+  color: white;
+  text-decoration: underline 2px solid white;
 }
