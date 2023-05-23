@@ -444,3 +444,94 @@ h6{
 }
 
 
+/* =====RESPONSIVE COMUNIDAD====== */
+
+
+@media all and (min-width: 0px) and (max-width: 500px){
+
+  body{
+    background-color: red;
+  }
+}
+
+.community-container__card{
+  transform: scale(0.65);
+  margin: 0;
+}
+
+.community-container{
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* ===============================================================================================================
+===============================================================================================================
+===============================================================================================================
+=====================================JUEGOS.HTML==========================================================================
+==========================================================================
+=============================================================================================================== */
+
+
+
+
+
+
+.games-container{
+  display: grid;
+  grid-template-rows: 12rem 12rem 12rem 12rem;
+  grid-template-columns: 100%;
+  overflow: auto;
+  background-color: #333138;
+  z-index: 1000;
+  height: 35rem;
+  width: 40rem;
+  margin: auto;
+  margin-top: 1.3rem;
+}
+
+.games-container__game{
+  margin: 1rem 0.8rem;
+  background-color: #222025;
+  display: flex;
+  align-items: center;
+  transition: scale 0.25s;
+}
+
+
+.games-container__game__image{
+  height: 180px;
+  width: 180px;
+  margin-left: 10px;
+}
+
+
+.games-container__game__info h2{
+  font-size: 30px;
+  color: white;
+}
+
+.games-container__game__info{
+  margin-left: 10px;
+  color: white;
+}
+
+.games-container__game__platform__image{
+  height: 120px;
+  width: 120px;
+}
+
+.games-container__game__platform{
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.games-container__game__platform h3{
+  color: white;
+  margin-top: 10px;
+  font-size: 21px;
+  text-align: center;
+}
